@@ -21,6 +21,7 @@ connectDB();
 
 // Routes
 app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/payment', require('./routes/payment_gatewayRoute'));
 
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
