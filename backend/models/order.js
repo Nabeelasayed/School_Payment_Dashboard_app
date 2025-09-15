@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 const Order = new mongoose.Schema({
   school_id: {
     type: String,
-    required: true
+    required: true,
+    index: true
   },
   trustee_id: {
     type: String,

@@ -4,7 +4,8 @@ const OrderStatusSchema = new mongoose.Schema({
   collect_id: {   // as per company doc = reference to your Order._id
     type: mongoose.Schema.Types.ObjectId,
     ref: "Order",
-    required: true
+    required: true,
+    index: true
   },
   pg_collect_request_id: {  // to store gateway's collect_request_id
     type: String,
@@ -18,7 +19,10 @@ const OrderStatusSchema = new mongoose.Schema({
   payment_message: String,
   status: { type: String, default: "PENDING" },
   error_message: String,
-  payment_time: Date
+  payment_time: {
+    type: Date,
+    index: true  
+  }
 });
 
 module.exports = mongoose.model("OrderStatus", OrderStatusSchema);
