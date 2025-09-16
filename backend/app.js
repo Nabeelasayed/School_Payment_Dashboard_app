@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173", // React frontend URL
+    origin: "https://paymentdashboardapp.netlify.app/", // React frontend URL
     credentials: true,               // allow cookies
   })
 );
