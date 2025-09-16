@@ -3,6 +3,7 @@ const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const cookieParser = require('cookie-parser');
 const PORT = process.env.PORT || 5000;
+const cors = require('cors');
 
 
 dotenv.config();
@@ -12,7 +13,12 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-
+app.use(
+  cors({
+    origin: "http://localhost:5173", // React frontend URL
+    credentials: true,               // allow cookies
+  })
+);
 
 
 // Connect to MongoDB
