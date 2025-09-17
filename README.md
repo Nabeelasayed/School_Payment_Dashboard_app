@@ -1,1 +1,155 @@
-School Payment and Dashboard Application
+# 🏫 School Payment & Dashboard Application
+
+## 📖 Overview
+The **School Payment & Dashboard Application** is a complete full-stack solution designed to help schools **manage digital payments, track transactions, and analyze financial data** in a structured and secure way.  
+
+It provides:
+- A **Backend REST API** for handling payment creation, transaction management, authentication, and webhook updates.  
+- A **Frontend Dashboard** built with React.js for schools and trustees to view, search, and filter transactions in real-time.  
+
+By integrating a **Payment Gateway** and **MongoDB Atlas**, the system ensures **scalable, secure, and real-time payment tracking**. Schools can easily generate payment requests, monitor statuses, and view detailed transaction reports — all from one place.
+
+---
+
+## ✨ Key Highlights
+- 🔐 **Secure Authentication** with JWT-based login and route protection.  
+- 💳 **Seamless Payment Gateway Integration** for creating and tracking transactions.  
+- 🔄 **Webhook Support** to automatically update transaction status in the database.  
+- 📊 **Interactive Dashboard** with search, sorting, pagination, and status filters.  
+- 🏫 **School-wise Transaction Management** to track payments per institution.  
+- 🌗 **Modern UI** with Tailwind CSS and optional dark mode.  
+- ⚡ **Scalable Architecture** using Node.js, Express, React, and MongoDB Atlas. 
+---
+## ⚙️ Backend Setup
+### 1. Clone the Repository
+```bash
+
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Environment Variables
+Create a .env file inside the backend/ folder with the following:
+```bash
+
+```
+
+### 4. Run the Backend
+```bash
+npm run dev
+```
+---
+## Backend API Usage & Endpoints
+### 1. Create Payment
+```bash
+POST /api/payment/create-payment
+```
+-> Accepts payment details from user. <br>
+-> Forwards to Payment API
+
+### 2. Authentication
+```bash
+POST /api/auth/login
+POST /api/auth/register
+POST /api/auth/logout
+```
+-> Login: Allows existing users to log in using email/username and password.<br>
+-> Register: Creates a new user account with the given details.<br>
+-> Logout: Safely ends the user session and invalidates the JWT token.
+
+### 3. Transactions
+``` bash
+GET /api/transactions?page=1&limit=5&sort=payment_time&order=desc
+GET /transactions/school/:schoolId
+GET /transaction-status/:custom_order_id
+```
+-> **Fetch All Transactions**: Retrieves a paginated list of all transactions with optional sorting and filters.<br>
+-> **Fetch Transactions by School**:  Returns all transactions related to a specific school using its `schoolId`.<br>
+-> **Check Transaction Status**:   Gets the current payment status of a transaction using the custom order ID.<br>
+
+---
+
+## 🖥️ Frontend Setup
+### 1. Navigate to Frontend
+```bash
+cd ../frontend
+```
+### 2. Install Dependencies
+```bash
+npm install
+```
+### 3. Environment Variables
+Create a .env file inside the frontend/ folder with:
+```bash
+VITE_API_BASE=http://localhost:5000
+```
+### 4. Run the Frontend
+```bash
+npm run dev
+```
+---
+## 📊 Frontend Features
+Dashboard with paginated & searchable transactions
+
+- Filters by status, school, and date <br>
+- Sorting by amount, status, or time <br>
+- Transaction Details Page for school-wise data <br>
+- Transaction Status Check with custom_order_id <br>
+- Form for creating payment <br>
+- Dark Mode toggle (extra feature) <br>
+
+---
+
+## 🔒 Security
+
+- JWT authentication for all protected routes.
+- Input validation and sanitization.
+- HTTPS recommended in production.
+- CORS policies enabled.
+
+---
+
+## 📈 Scalability
+- Pagination for transaction lists.
+- Sorting and filtering with query parameters.
+- Indexed fields in MongoDB (school_id, collect_id, custom_order_id).
+
+---
+
+## ☁️ Hosting
+- Backend: Host on Render.
+- Frontend: Deploy on Netlify.
+
+---
+
+## 
+
+### Authentication Page
+<img width="1919" height="867" alt="image" src="https://github.com/user-attachments/assets/ff041514-2b7e-4c05-a47b-85a3e40fba92" />
+
+### Transaction Dashboard
+<img width="1919" height="464" alt="image" src="https://github.com/user-attachments/assets/2dcdbebe-62a2-42b5-96fe-d66ce6beb6ec" />
+<img width="1908" height="682" alt="image" src="https://github.com/user-attachments/assets/40cb0504-91f3-4d6f-a7f5-94496d3b1416" />
+
+### Create Payment
+<img width="824" height="755" alt="image" src="https://github.com/user-attachments/assets/18967f57-2306-4a1e-bc8f-9712dcf8e2b9" />
+
+### Dark and Light MOde
+<img width="1348" height="447" alt="image" src="https://github.com/user-attachments/assets/0f91c705-ed74-46eb-977d-69aaa726516c" />
+<img width="1322" height="649" alt="image" src="https://github.com/user-attachments/assets/bfc454ec-44fe-4482-b330-eeb3a0c791cf" />
+
+---
+
+## 📌 Submission
+✅ GitHub Repository (this repo): https://github.com/Nabeelasayed/School_Payment_Dashboard_app.git
+✅ Hosted Backend Link: https://school-finance-payment-and-dashboard.onrender.com/
+✅ Hosted Frontend Link: https://paymentdashboardapp.netlify.app/
+
+---
+
+##👨‍💻 Author
+NABEELA SAYED 
+Student, M.H. Saboo Siddik College of Engineering
