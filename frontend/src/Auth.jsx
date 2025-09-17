@@ -153,10 +153,12 @@ const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:5000";
         {/* Submit button */}
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition-all"
-        >
-          {mode === "login" ? "Login" : "Sign Up"}
-        </button>
+  className="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold 
+             hover:bg-white hover:text-blue-600 border border-blue-600 
+             transition-all"
+>
+  {mode === "login" ? "Login" : "Sign Up"}
+</button>
 
         {/* Toggle mode */}
         <p className="text-sm mt-6 text-center text-gray-600">
