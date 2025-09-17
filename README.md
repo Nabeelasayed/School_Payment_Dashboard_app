@@ -145,8 +145,10 @@ Dashboard with paginated & searchable transactions
 <img width="824" height="755" alt="image" src="https://github.com/user-attachments/assets/18967f57-2306-4a1e-bc8f-9712dcf8e2b9" />
 
 ### Dark and Light MOde
-<img width="1348" height="447" alt="image" src="https://github.com/user-attachments/assets/0f91c705-ed74-46eb-977d-69aaa726516c" />
-<img width="1322" height="649" alt="image" src="https://github.com/user-attachments/assets/bfc454ec-44fe-4482-b330-eeb3a0c791cf" />
+<img width="1600" height="709" alt="image" src="https://github.com/user-attachments/assets/2ce8895f-3296-4daa-b997-ed847c6bf2fa" />
+<img width="1600" height="729" alt="image" src="https://github.com/user-attachments/assets/29f92800-0938-4a6c-bf5b-7bc4a2982205" />
+
+
 
 ---
 
