@@ -23,7 +23,7 @@ By integrating a **Payment Gateway** and **MongoDB Atlas**, the system ensures *
 ## ⚙️ Backend Setup
 ### 1. Clone the Repository
 ```bash
-
+git clone https://github.com/Nabeelasayed/School_Payment_Dashboard_app.git
 ```
 
 ### 2. Install Dependencies
@@ -34,6 +34,14 @@ npm install
 ### 3. Environment Variables
 Create a .env file inside the backend/ folder with the following:
 ```bash
+MONGO_URI = mongodb+srv://nabeelasayed2627_db_user:Ggp4jD7XaMGIwvT6@cluster0.okyq0e0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+PORT = 5000
+JWT_SECRET = "nabz26"
+PAYMENT_API_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0cnVzdGVlSWQiOiI2NWIwZTU1MmRkMzE5NTBhOWI0MWM1YmEiLCJJbmRleE9mQXBpS2V5Ijo2fQ.IJWTYCOurGCFdRM2xyKtw6TEcuwXxGnmINrXFfsAdt0
+PG_SECRET = edvtest01 
+CALLBACK_URL = "https://school-finance-payment-and-dashboard.onrender.com/api/payment/callback"
+SCHOOL_ID = 65b0e6293e9f76a9694d84b4
+
 
 ```
 
@@ -131,8 +139,7 @@ Dashboard with paginated & searchable transactions
 <img width="1919" height="867" alt="image" src="https://github.com/user-attachments/assets/ff041514-2b7e-4c05-a47b-85a3e40fba92" />
 
 ### Transaction Dashboard
-<img width="1919" height="464" alt="image" src="https://github.com/user-attachments/assets/2dcdbebe-62a2-42b5-96fe-d66ce6beb6ec" />
-<img width="1908" height="682" alt="image" src="https://github.com/user-attachments/assets/40cb0504-91f3-4d6f-a7f5-94496d3b1416" />
+<img width="1600" height="709" alt="image" src="https://github.com/user-attachments/assets/ea8fcf8e-e127-4e3e-ad33-0ca709e5a06c" />
 
 ### Create Payment
 <img width="824" height="755" alt="image" src="https://github.com/user-attachments/assets/18967f57-2306-4a1e-bc8f-9712dcf8e2b9" />
