@@ -156,6 +156,6 @@ Dashboard with paginated & searchable transactions
 
 ---
 
-##👨‍💻 Author
-NABEELA SAYED 
-Student, M.H. Saboo Siddik College of Engineering
+## 👨‍💻 Author
+NABEELA SAYED <br> 
+Student,M.H. Saboo Siddik College of Engineering.
