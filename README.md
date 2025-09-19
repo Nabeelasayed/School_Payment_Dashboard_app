@@ -1,7 +1,7 @@
-# 🏫 School Payment & Dashboard Application
+# 💲 School Payment and Dashboard Application
 
 ## 📖 Overview
-The **School Payment & Dashboard Application** is a complete full-stack solution designed to help schools **manage digital payments, track transactions, and analyze financial data** in a structured and secure way.  
+The **School Payment and Dashboard Application** is a complete full-stack solution designed to help schools **manage digital payments, track transactions, and analyze financial data** in a structured and secure way.  
 
 It provides:
 - A **Backend REST API** for handling payment creation, transaction management, authentication, and webhook updates.  
@@ -133,7 +133,7 @@ Dashboard with paginated & searchable transactions
 
 ---
 
-## 
+## Screenshots:
 
 ### Authentication Page
 <img width="1919" height="867" alt="image" src="https://github.com/user-attachments/assets/ff041514-2b7e-4c05-a47b-85a3e40fba92" />
@@ -147,9 +147,6 @@ Dashboard with paginated & searchable transactions
 ### Dark and Light MOde
 <img width="1600" height="709" alt="image" src="https://github.com/user-attachments/assets/2ce8895f-3296-4daa-b997-ed847c6bf2fa" />
 <img width="1600" height="729" alt="image" src="https://github.com/user-attachments/assets/29f92800-0938-4a6c-bf5b-7bc4a2982205" />
-
-
-
 ---
 
 ## 📌 Submission
